@@ -5,10 +5,8 @@ type User{
     email:String!
 }
 
-    extend type Query{
-        users:[User]
-    }
-
-
+extend type Query{
+    users:[User]
+}
 `
 export default userType

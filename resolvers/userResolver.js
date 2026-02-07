@@ -1,4 +1,5 @@
 import { User } from "../db.js"
+
 const userResolver = {
     Query: {
         users() {

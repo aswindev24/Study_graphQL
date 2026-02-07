@@ -1,4 +1,5 @@
-import { Game } from "../db.js"
+import { Game } from '../db.js'
+
 const gameResolver = {
     Query: {
         games() {
