@@ -1,13 +1,10 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import base from "./Schema/base.js"
-import userType from "./Schema/userType.js"
-import gameType from "./Schema/gameType.js"
-import userResolver from "./Resolver/userResolver.js"
-import gameResolver from "./Resolver/gameResolver.js"
+import ListSchemaType from "./Schema/ListSchemaType.js"
+import ListResolver from "./Routes/ResolverRoutes/Resolver.js"
 
-const typeDefs = [base, userType, gameType]
-const resolvers = [userResolver, gameResolver]
+const typeDefs = ListSchemaType
+const resolvers = ListResolver
 const server = new ApolloServer({
     typeDefs,
     resolvers
